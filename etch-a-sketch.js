@@ -38,7 +38,7 @@ function makeGrid() {
 			gridSquare.addEventListener('mouseenter', event => {event.target.classList.add("mouseover")});
 			gridSquare.addEventListener('mouseleave', event => {event.target.classList.remove("mouseover")});
 
-			gridSquare.addEventListener('touchstart', event => {event.target.classList.add("mouseover")});
+			gridSquare.addEventListener('touchmove', event => {event.target.classList.add("mouseover")});
 			gridSquare.addEventListener('touchstop', event => {event.target.classList.remove("mouseover")});
 
 			gridContainer.appendChild(gridSquare);
